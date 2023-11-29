@@ -1,9 +1,18 @@
+import java.net.URI
+
 group = "org.smth"
 
 repositories {
   mavenLocal()
   mavenCentral()
   maven(url = "https://packages.confluent.io/maven/")
+  maven {
+    url = URI("https://maven.pkg.github.com/tubopo/common-smth")
+    credentials {
+      username = project.properties["github.username"] as String? ?: System.getenv("GITHUB_USERNAME") ?: ""
+      password = project.properties["github.username"] as String? ?: System.getenv("GITHUB_USERNAME") ?: ""
+    }
+  }
 }
 
 plugins {

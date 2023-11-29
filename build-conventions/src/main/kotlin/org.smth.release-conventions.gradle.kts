@@ -47,7 +47,7 @@ publishing {
   repositories {
     maven {
       name = "GithubPackages"
-      url = uri("")
+      url = uri("https://maven.pkg.github.com/tubopo/common-smth")
       credentials {
         username =
           project.properties["github.username"] as String? ?: System.getenv("GITHUB_USERNAME") ?: ""
