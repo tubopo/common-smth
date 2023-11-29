@@ -1,0 +1,17 @@
+[versions]
+axion-release-version = "1.15.5"
+jetbrains-changelog-version = "2.2.0"
+kotlin-dsl-version = "4.0.14"
+checkstyle-version = "10.12.5"
+sonarqube-version = "4.4.1.3373"
+lombok-version = "8.4"
+
+[libraries]
+axion-release = { group = "pl.allegro.tech.build", name = "axion-release-plugin", version.ref = "axion-release-version" }
+jetbrains-changelog = { group = "org.jetbrains.intellij.plugins", name = "gradle-changelog-plugin", version.ref = "jetbrains-changelog-version" }
+checkstyle = { group = "com.puppycrawl.tools", name = "checkstyle", version.ref = "checkstyle-version" }
+sonarqube = { group = "org.sonarqube", name = "org.sonarqube.gradle.plugin", version.ref = "sonarqube-version" }
+lombok = { group = "io.freefair.gradle", name = "lombok-plugin", version.ref = "lombok-version" }
+
+[plugins]
+kotlin-dsl = { id = "org.gradle.kotlin.kotlin-dsl", version.ref = "kotlin-dsl-version" }
