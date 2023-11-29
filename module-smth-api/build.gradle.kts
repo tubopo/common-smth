@@ -8,5 +8,6 @@ plugins {
 scmVersion {
   tag {
     prefix.set(description)
+    versionSeparator.set("@")
   }
 }
