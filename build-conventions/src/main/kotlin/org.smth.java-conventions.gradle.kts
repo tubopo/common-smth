@@ -7,10 +7,12 @@ repositories {
   mavenCentral()
   maven(url = "https://packages.confluent.io/maven/")
   maven {
-    url = URI("https://maven.pkg.github.com/tubopo/common-smth")
+    url = URI("https://maven.pkg.github.com/tubopo/${rootProject.name}")
     credentials {
-      username = project.properties["github.username"] as String? ?: System.getenv("GITHUB_USERNAME") ?: ""
-      password = project.properties["github.username"] as String? ?: System.getenv("GITHUB_USERNAME") ?: ""
+      username =
+        project.properties["github.username"] as String? ?: System.getenv("GITHUB_USERNAME") ?: ""
+      password =
+        project.properties["github.username"] as String? ?: System.getenv("GITHUB_USERNAME") ?: ""
     }
   }
 }
