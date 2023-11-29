@@ -6,9 +6,9 @@ scmVersion {
   monorepo {
     include(
       listOf(
-        "module-smth-api",
-        "module-smth-a",
-        "module-smth-b"
+        "common-smth/module-smth-api",
+        "common-smth/module-smth-a",
+        "common-smth/module-smth-b"
       )
     )
   }
