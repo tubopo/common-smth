@@ -1,3 +1,5 @@
+import org.jetbrains.changelog.date
+
 plugins {
     id("org.smth.java-conventions")
     id("maven-publish")
@@ -41,6 +43,7 @@ publishing {
 }
 
 changelog {
-    version.set(scmVersion.version)
     path.set(file("CHANGELOG.md").canonicalPath)
+    header.set(provider { "[${version.get()}] - ${date()}" })
+    lineSeparator.set("\n")
 }
