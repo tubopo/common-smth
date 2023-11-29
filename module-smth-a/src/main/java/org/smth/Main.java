@@ -1,8 +1,13 @@
 package org.smth;
 
-/** Application entrypoint. */
+import org.smth.impl.ModuleSmth;
+
+/**
+ * Application entrypoint.
+ */
 public class Main {
+
   public static void main(String[] args) {
-    System.out.println("module-smth-a");
+    new ModuleSmth().doSmth();
   }
 }
