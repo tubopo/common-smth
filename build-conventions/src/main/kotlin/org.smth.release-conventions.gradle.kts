@@ -12,8 +12,11 @@ scmVersion {
     type.set("git")
   }
 
-  tag {
-    prefix.set("v")
+  scmVersion {
+    tag {
+      prefix.set("@$group/${project.name}")
+      versionSeparator.set("@")
+    }
   }
 
   checks {

@@ -5,13 +5,6 @@ plugins {
   id("org.smth.release-conventions")
 }
 
-scmVersion {
-  tag {
-    prefix.set(description)
-    versionSeparator.set("@")
-  }
-}
-
 dependencies {
   api(project(":module-smth-api"))
 }
