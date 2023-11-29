@@ -10,6 +10,7 @@ plugins {
 scmVersion {
   repository {
     type.set("git")
+    customUsername.set(System.getenv("GITHUB_TOKEN"))
   }
 
   scmVersion {
