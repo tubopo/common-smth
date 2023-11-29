@@ -12,6 +12,8 @@ jobs:
 
       - name: Checkout
         uses: actions/checkout@v4
+        run: |
+          git fetch --tags --unshallow
 
       - name: Install Java
         uses: actions/setup-java@v3

@@ -12,7 +12,18 @@ scmVersion {
         type.set("git")
     }
 
+    tag {
+        prefix.set("v")
+    }
+
     checks {
+        // seeks staged, but uncommitted changes in repository
+        uncommittedChanges.set(true)
+
+        // all local commits have been pushed to remote
+        aheadOfRemote.set(true)
+
+        // build has no snapshot libraries in dependencies
         snapshotDependencies.set(true)
     }
 
