@@ -13,7 +13,7 @@ scmVersion {
     )
     exclude(
       listOf(
-        rootProject.name,
+        "${rootProject.name}/",
         "${rootProject.name}/build-conventions"
       )
     )
