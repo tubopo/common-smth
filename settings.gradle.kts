@@ -1,3 +1,5 @@
+rootProject.name = "common-smth"
+
 includeBuild("build-conventions")
 
 include(
