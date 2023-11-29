@@ -11,5 +11,11 @@ scmVersion {
         "${rootProject.name}/module-smth-b"
       )
     )
+    exclude(
+      listOf(
+        rootProject.name,
+        "${rootProject.name}/build-conventions"
+      )
+    )
   }
 }
