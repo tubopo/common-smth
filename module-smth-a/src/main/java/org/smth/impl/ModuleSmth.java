@@ -11,9 +11,4 @@ public class ModuleSmth implements ModuleSmthApi {
   public void doSmth() {
     System.out.println("module-smth");
   }
-
-  @Override
-  public void extDoSmth() {
-    //nothing
-  }
 }
