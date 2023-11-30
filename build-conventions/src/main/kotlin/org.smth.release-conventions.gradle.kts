@@ -10,8 +10,12 @@ plugins {
 scmVersion {
   repository {
     type.set("git")
-    customUsername.set(System.getenv("GITHUB_USER"))
-    customPassword.set(System.getenv("GITHUB_TOKEN"))
+    customUsername.set(
+      project.properties["github.username"] as String? ?: System.getenv("GITHUB_USERNAME") ?: ""
+    )
+    customPassword.set(
+      project.properties["github.token"] as String? ?: System.getenv("GITHUB_TOKEN") ?: ""
+    )
   }
 
   scmVersion {
