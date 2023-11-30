@@ -11,10 +11,10 @@ scmVersion {
   repository {
     type.set("git")
     customUsername.set(
-      project.properties["github.username"] as String? ?: System.getenv("GITHUB_USERNAME") ?: ""
+      System.getenv("GITHUB_USERNAME")
     )
     customPassword.set(
-      project.properties["github.token"] as String? ?: System.getenv("GITHUB_TOKEN") ?: ""
+      System.getenv("GITHUB_TOKEN")
     )
   }
 
