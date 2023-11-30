@@ -35,6 +35,21 @@ scmVersion {
     // build has no snapshot libraries in dependencies
     snapshotDependencies.set(true)
   }
+  monorepo {
+    include(
+      listOf(
+        "${rootProject.name}/module-smth-api",
+        "${rootProject.name}/module-smth-a",
+        "${rootProject.name}/module-smth-b"
+      )
+    )
+    exclude(
+      listOf(
+        rootProject.name,
+        "${rootProject.name}/build-conventions"
+      )
+    )
+  }
 
 }
 
