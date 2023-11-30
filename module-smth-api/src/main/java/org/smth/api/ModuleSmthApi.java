@@ -14,4 +14,8 @@ public interface ModuleSmthApi {
    * Improved entrypoint.
    */
   void extDoSmth();
+
+  default void doSmthsss() {
+
+  }
 }
