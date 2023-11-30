@@ -9,4 +9,8 @@ public interface ModuleSmthApi {
    * Public entrypoint.
    */
   void doSmth();
+
+  default void doSmthNew(){
+
+  }
 }
