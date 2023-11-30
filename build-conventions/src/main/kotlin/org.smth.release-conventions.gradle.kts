@@ -20,7 +20,7 @@ scmVersion {
 
   scmVersion {
     tag {
-      prefix.set("@$group/${project.name}")
+      prefix.set(project.name)
       versionSeparator.set("@")
     }
   }

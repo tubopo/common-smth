@@ -1,5 +1,3 @@
-import java.net.URI
-
 group = "org.smth"
 
 repositories {
@@ -7,7 +5,7 @@ repositories {
   mavenCentral()
   maven(url = "https://packages.confluent.io/maven/")
   maven {
-    url = URI("https://maven.pkg.github.com/tubopo/${rootProject.name}")
+    url = uri("https://maven.pkg.github.com/tubopo/${rootProject.name}")
     credentials {
       username =
         project.properties["github.username"] as String? ?: System.getenv("GITHUB_USERNAME") ?: ""
