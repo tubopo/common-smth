@@ -1,5 +1,5 @@
 [versions]
-axion-release-version = "1.16.0"
+axion-release-version = "1.16.1"
 jetbrains-changelog-version = "2.2.0"
 kotlin-dsl-version = "4.2.1"
 checkstyle-version = "10.12.5"
